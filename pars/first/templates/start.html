@@ -1,0 +1,14 @@
+{{ len }}
+{% for i in data %}
+<div>
+    <h1>{{ i.id }} -------------------------------------</h1>
+    <p><img src = {{ i.ava }}></p>
+    <div>
+        <a href = {{ i.url }}>Канал</a>
+        <p>{{ i.name }}</p>
+        <p>{{ i.date }}</p>
+        <p>{{ i.n }}</p>
+        <p>{{ i.watch }} просмотров</p>
+    </div>
+</div>
+{% endfor %}
